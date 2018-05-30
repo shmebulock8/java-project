@@ -7,7 +7,7 @@ pipeline {
 	  steps{
 	sh 'ant -f build.xml -v'}
 	 }
-	post{
+	post {
 	  always {
 	   archive 'dist/*.jar'
 		}
